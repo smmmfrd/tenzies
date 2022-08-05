@@ -1,0 +1,93 @@
+*{
+  margin: 0;
+  font-family: 'Karla';
+}
+
+body{
+  background-color: #0B2434;
+  padding: 2rem;
+}
+
+main{
+  background-color: #F5F5F5;
+  height: 400px;
+  max-width: 800px;
+  margin: auto;
+  border-radius: 1rem;
+
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 20px;
+}
+
+.title {
+    font-size: 40px;
+    margin: 0;
+}
+
+.instructions {
+    font-family: 'Inter', sans-serif;
+    font-weight: 400;
+    margin-top: 0;
+    text-align: center;
+    margin-bottom: 40px;
+}
+
+.die--container{
+  width: 75%;
+  
+  display: grid;
+  grid-template-columns: repeat(5, 1fr);
+  grid-template-rows: repeat(2, 1fr);
+  gap: 1rem;
+}
+
+.die{
+  width: 50px;
+  height: 50px;
+
+  margin: auto;
+  background: #FFFFFF;
+  box-shadow: 0px 2px 2px rgba(0, 0, 0, 0.15);
+  border-radius: 4px;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  color: #2B283A;
+  font-weight: 700;
+  font-size: 2.5rem;
+
+  user-select: none;
+  cursor: pointer;
+}
+
+.die.held{
+  background-color: #59E391;
+}
+
+.reroll-btn{
+  margin-top: 3rem;
+  width: 150px;
+  height: 50px;
+
+  background-color: #5035FF;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+
+  color: white;
+  font-weight: 700;
+  font-size: 1.7rem;
+}
+
+.reroll-btn:focus{
+  outline: none;
+}
+
+.reroll-btn:active{
+  box-shadow: inset 5px 5px 10px -3px rgba(0, 0, 0, 0.7);
+}
